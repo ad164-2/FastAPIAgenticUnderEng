@@ -62,7 +62,7 @@ def get_chat_llm(capability: ModelCapability = ModelCapability.BASIC, temperatur
 
     return ChatGoogleGenerativeAI(
         model="gemini-2.5-flash",
-        google_api_key='AIzaSyDI1DW6uixxBrtyCuOKkDO62FFfjTO9-sw',
+        google_api_key='',
         temperature=0.7,
         convert_system_message_to_human=True  # Required for Gemini models
     )
@@ -91,4 +91,5 @@ def get_audio_client():
         base_url=BASE_URL,
         api_key=API_KEY,
         http_client=HTTP_CLIENT
+
     )
