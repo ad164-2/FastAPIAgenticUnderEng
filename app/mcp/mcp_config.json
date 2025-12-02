@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "tools": {
+    "google_search": {
+      "enabled": true,
+      "description": "Search the web using Google Search API",
+      "config": {
+        "api_key": "${GOOGLE_API_KEY}",
+        "max_results": 5
+      }
+    },
+    "sqlite": {
+      "enabled": true,
+      "description": "Execute SQLite queries on the application database",
+      "config": {
+        "database_path": "./my_database.db",
+        "timeout": 30,
+        "max_query_results": 100
+      }
+    },
+    "current_date": {
+      "enabled": true,
+      "description": "Get current date and time information",
+      "config": {}
+    }
+  }
+}
